@@ -1,0 +1,39 @@
+//-----------   INCLUDES   --------------
+
+//- helpers
+include _includes/helpers/paths
+include _includes/helpers/_mixins
+
+//- components
+include _includes/components/head/head
+include _includes/components/header/header
+include _includes/components/footer/footer
+
+include _includes/components/c-main__block/c-main__block
+include _includes/components/c-infoblock/c-infoblock
+include _includes/components/c-product/c-product
+include _includes/components/c-team/c-team
+include _includes/components/c-subscribe/c-subscribe
+include _includes/components/c-contact/c-contact
+
+//-----------   INCLUDES END  --------------
+
+doctype html
+html(lang='ru')
+	+head({'title':'Index'})
+	body
+		//- components
+		//- include #{route.fromJade}#{route.images}useful/svg/theme/symbol-defs.svg // for include svg
+		.l-page-wrapper
+			+header()
+			main
+				+c-main__block()
+				+c-infoblock()
+				+c-product()
+				+c-team()
+				+c-subscribe()
+				+c-contact()
+
+			+footer()
+
+		script(data-main=route.js + "main" src=route.js + "require.js")

@@ -1,0 +1,41 @@
+// @import (inline) '../../images/useful/svg/theme/style.css';
+// @import '../../../dist/s/images/useful/sprites/theme/theme-sprite';
+
+.ico {
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+
+    &:before {
+        transition: visibility 300ms ease, opacity 300ms ease;
+        display: block;
+        content: '';
+    }
+    &:after {
+        transition: visibility 300ms ease, opacity 300ms ease;
+        position: absolute;
+        visibility: hidden;
+        display: block;
+        content: '';
+        opacity: 0;
+        left: 0;
+        top: 0;
+    }
+    &:hover {
+        &:before {
+            visibility: hidden;
+            opacity: 0;
+        }
+        &:after {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+.icon {
+    display: inline-block;
+    stroke: currentColor;
+    fill: currentColor;
+    height: 1em;
+    width: 1em;
+}

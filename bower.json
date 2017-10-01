@@ -1,0 +1,32 @@
+{
+  "name": "jade_30.06.16",
+  "description": "template for team",
+  "main": "gulpfile.js",
+  "authors": [
+    "Hlib Shulzhenko <webdev_gleb@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "svg4everybody": "^2.1.4",
+    "perfect-scrollbar": "^0.6.16",
+    "animate.css": "^3.5.2",
+    "parallax.js": "^1.4.2"
+  },
+  "install": {
+    "path": {
+      "css": "dev/less/plugins",
+      "js": "dev/js/plugins"
+    }
+  },
+  "devDependencies": {
+    "jquery": "^3.2.1"
+  }
+}

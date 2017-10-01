@@ -1,0 +1,36 @@
+// /* add new small column */
+// .row{
+// 	&.row_inline{
+// 		text-align: center;
+// 		> [class*="col-"]{
+// 			display: inline-block;
+// 			vertical-align: top;
+// 			margin-left: -2px;
+// 			margin-right: -2px;
+// 			float: none;
+// 			text-align: left;
+// 		}
+// 	}
+// }
+// .container{
+// 	&_thin{
+// 		@media ( min-width: @screen-sm-min) {
+// 			padding-left: 5px;
+// 			padding-right: 5px;
+// 		}
+// 	}
+// 	&_w_thin{
+// 		max-width: 1070px;
+// 	}
+// }
+// @media (max-width: @screen-xx-max) {
+// 	.col-xx-24{
+// 		width: 100%;
+// 	}
+// 	.hidden-xx{
+// 		display: none !important;
+// 	}
+// 	.visible-xx{
+// 		display: block !important;
+// 	}
+// }

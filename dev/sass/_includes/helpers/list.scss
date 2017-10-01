@@ -1,0 +1,22 @@
+.h-list{
+	padding-left: 0;
+	list-style-type: none;
+	margin-bottom: 0;
+}
+.h-list_float{
+	margin-bottom: 0;
+	list-style-type: none;
+	padding-left: 0;
+	> li{
+		float: left;
+	}
+	@after();
+}
+.h-list_inline-block{
+	margin-bottom: 0;
+	list-style-type: none;
+	padding-left: 0;
+	> li{
+		display: inline-block;
+	}
+}

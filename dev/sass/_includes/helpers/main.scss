@@ -1,0 +1,129 @@
+/*----------  global changes START  ----------*/
+*{
+	outline: none !important;
+}
+html {
+  height: 100%;
+}
+body {
+	position: relative;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	min-height: 100%;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	margin: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.c-content{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*----------  global changes END    ----------*/
+
+
+/*----------  colors classes  ----------*/
+
+
+/*----------  bootstrap CHANGE HELPERS  ----------*/
+
+/* typography */
+
+// Headings
+// -------------------------
+
+h1,h2,h3,h4,.h1,.h2,.h3,.h4{
+	// margin-top: 0;
+	// margin-bottom: 20px;
+	margin: 0;
+	&.h_thin{
+		font-weight: 400;
+	}
+}
+
+h1,.h1{
+	// @media ( max-width: @screen-xs-max) {
+	// 	font-size: @font-size-h2;
+	// }
+}
+h2,.h2{
+	// @media ( max-width: @screen-xs-max) {
+	// 	font-size: @font-size-h3;
+	// }
+}
+h3, .h3{
+	// @media ( max-width: @screen-xs-max) {
+	// 	font-size: @font-size-h4;
+	// 	line-height: @line-height-base;
+	// }
+}
+h4, .h4{
+	// @media ( max-width: @screen-xs-max) {
+	// 	font-size: @font-size-h5;
+	// }
+}
+h5, .h5{
+	line-height: 28px;
+	// @media ( max-width: @screen-xs-max) {
+	// 	font-size: @font-size-h6;
+	// }
+}
+h6, .h6{
+	margin-top: 0;
+	margin-bottom: 0;
+	// @media ( max-width: @screen-xs-max) {
+	// 	font-size: 13px;
+	// 	line-height: 15px;
+	// }
+}
+.h-sC{
+	transition: background-color 300ms ease;
+}
+
+// Body text
+// -------------------------
+.text-small{
+	font-size: 13px;
+	line-height: 15px;
+}
+.text-large{
+	// font-size: @font-size-large;
+}
+p {
+  margin: 0 0 20px;
+}
+a{
+	text-decoration: none;
+	font-size: 14px;
+	&.active{
+		// color: @link-hover-color;
+	}
+	&.a_none{
+		text-decoration: none;
+	}
+}
+.h-overflow{
+	overflow: hidden;
+}
+/*----------  bootstrap CHANGE HELPERS  END  ----------*/
+
+.l-page-wrapper {
+	overflow: hidden;
+}
+a{
+	cursor: pointer;
+}
+input, textarea{
+	box-sizing: border-box;
+	width: 100%;
+	font-size: 16px;
+	border-radius: 5px;
+	border: none;
+}
+textarea{
+	resize: none;
+	min-height: 248px;
+}

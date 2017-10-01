@@ -1,0 +1,5 @@
+mixin svg(ttl, advClass)
+	-ttl ? ttl : ttl = ""
+	-advClass ? advClass : advClass = ""
+	svg.icon(class=ttl + '' + advClass)
+		use(xlink:href='s/images/useful/svg/theme/symbol-defs.svg#' + ttl)

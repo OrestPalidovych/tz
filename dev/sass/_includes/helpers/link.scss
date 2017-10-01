@@ -1,0 +1,23 @@
+.h-link{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 19px;
+    // color: @CapeCod;
+    &:hover{
+        // color: @Denim;
+    }
+    > .icon-oval-play{
+        font-size: 48px;
+        margin-right: 12px;
+        // @media ( max-width: @screen-xs-max) {
+        //    font-size: 40px;
+        // }
+    }
+    > span{
+        // margin-top: -2px;
+    }
+}

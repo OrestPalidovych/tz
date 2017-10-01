@@ -1,0 +1,35 @@
+.c-footer{
+    background-color: #313030;
+    color: #fff;
+	padding-top: 46px;
+	padding-bottom: 27px;
+}
+.c-footer__wrap{
+	display: flex;
+	align-items: center;
+}
+.c-footer__copy{
+	flex-grow: 1;
+	margin-right: 40px;
+}
+.c-footer__links{
+	a{
+		&:not(:last-child){
+			margin-right: 20px;
+		}
+	}
+}
+@media screen and (max-width: 767px) {
+	.c-footer__copy{
+		margin-right: 20px;
+	}
+	.c-footer__links{
+		a{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			&:not(:last-child){
+				margin-right: 5px;
+			}
+		}
+	}
+}

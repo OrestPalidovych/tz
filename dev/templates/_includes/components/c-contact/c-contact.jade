@@ -1,0 +1,36 @@
+mixin c-contact(data)
+	.container
+		.c-team__header
+			h3 get in touch
+		.default__txt.txt__underline
+			span Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut
+				br
+				| labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor
+				br
+				| incididunt ut labore et.
+	.c-contact
+		.container
+			.c-contact__wrap
+				form.c-contact__form
+					.c-contact__inputs
+						.form-group
+							label
+								input(type='text', placeholder='Name', name='name')
+						.form-group
+							label
+								input(type='email', placeholder='Your Mail', name='cont_mail')
+					.form-group
+						textarea(placeholder='Type your message')
+					.c-contact__button
+						button(type='submit').btn.btn__red Send message
+				.c-contact__txt
+					.c-contact__txt-par
+						p contact info
+					.default__txt
+						span Jalalabad 24 / A, Ambaarkhana, Sylhet,
+							br
+							| Bangladesh
+					.c-contact__txt-link
+						a(href='mailto:redwan@deviserweb.com') redwan@deviserweb.com
+					.c-contact__txt-link
+						a(href='tel:+88017 61746373') (+88) 017 617 46373

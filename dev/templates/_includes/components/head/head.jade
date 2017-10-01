@@ -1,0 +1,13 @@
+
+mixin head(data)
+	- var project_mame = 'TZ'
+		unless (data)
+			- var data = {}
+			//-
+	head
+		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title=data.title ? project_mame + ' | ' + data.title : ' | New page'
+		//- link(href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet")
+		link(href='s/css/all.css', rel='stylesheet')

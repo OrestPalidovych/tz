@@ -1,0 +1,146 @@
+.c-team {
+	padding-bottom: 105px;
+}
+
+.c-team__header {
+	text-transform: uppercase;
+	padding-top: 55px;
+	h3 {
+		font-size: 42px;
+		font-weight: 700;
+		margin-bottom: 22px;
+	}
+}
+
+.txt__underline{
+	position: relative;
+	padding-bottom: 55px;
+	&:before {
+		position: absolute;
+		content: '';
+		display: inline-block;
+		height: 1px;
+		width: 130px;
+		background-color: #ff2d2d;
+		bottom: 0;
+		left: 0;
+	}
+}
+
+.c-team__block {
+	padding-top: 73px;
+	position: relative;
+	display: flex;
+}
+
+.c-team__main-img {
+	margin-right: 70px;
+	flex-shrink: 0;
+}
+
+.c-team__main-info {
+	display: flex;
+	flex-direction: column;
+}
+
+.c-team__name {
+	text-transform: uppercase;
+	font-size: 30px;
+	margin-bottom: 20px;
+	font-weight: 600;
+	margin-top: 6px;
+}
+
+.c-team__links {
+	margin-top: 36px;
+	margin-bottom: 63px;
+	flex-grow: 1;
+	a {
+		font-size: 18px;
+		font-style: italic;
+		color: rgba(0, 0, 0, 0.8);
+		line-height: 1.333;
+		&:not(:last-child){
+			margin-right: 40px;
+		}
+	}
+}
+
+.c-team__img {
+	display: flex;
+	&-wrap {
+		&:not(:last-child) {
+			margin-right: 20px;
+		}
+		&.active {
+			position: relative;
+			&:before {
+				content: 'sokina jue';
+				text-transform: uppercase;
+				font-weight: 600;
+				text-align: center;
+				padding: 8px 0;
+				display: inline-block;
+				position: absolute;
+				bottom: 5px;
+				left: 0;
+				right: 0;
+				background-color: rgba(0, 0, 0, 0.5);
+				font-size: 18px;
+				color: #fff;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	.c-team {
+		padding-bottom: 50px;
+	}
+	.c-team__header {
+		padding-top: 20px;
+		h3{
+			font-size: 32px;
+			margin-bottom: 15px;
+		}
+	}
+	.txt__underline {
+		padding-bottom: 30px;
+	}
+	.c-team__block{
+		padding-top: 30px;
+		flex-wrap: wrap;
+	}
+	.c-team__main-info {
+		margin-top: 20px;
+		max-width: 100%;
+	}
+	.c-team__links {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.c-team__main-img{
+		flex-shrink: 1;
+		margin-right: 0;
+	}
+	.c-team__links {
+		display: flex;
+		flex-direction: column;
+		a {
+			&:not(:last-child){
+				margin-right: 0;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.c-team__img {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.c-team__img-wrap:not(:last-child){
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,9 @@
+.backgroundblendmode{
+    .h-blend-multiply {
+        mix-blend-mode: multiply;
+    }
+    .h-blend-screen{
+        mix-blend-mode: screen;
+        background-color: #fff;
+    }
+}

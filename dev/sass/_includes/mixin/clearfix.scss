@@ -1,0 +1,9 @@
+@after(){
+	&:after{
+		content: '';
+		display: table;
+		height: 0;
+		visibility: hidden;
+		clear: both;
+	}
+}

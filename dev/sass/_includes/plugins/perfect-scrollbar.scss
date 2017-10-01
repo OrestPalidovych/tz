@@ -1,0 +1,15 @@
+.ps-container{
+    position: relative;
+    overflow: hidden !important;
+}
+.ps-scrollbar-y{
+    position: absolute;
+    width: 100%;
+    background-color: #000;
+    border-radius: 10px;
+    &-rail{
+        position: absolute;
+        width: 1px;
+        right: 0 !important;
+    }
+}

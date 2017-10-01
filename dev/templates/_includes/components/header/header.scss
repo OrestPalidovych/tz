@@ -1,0 +1,128 @@
+.c-header {
+	padding-top: 29px;
+	background-color: #f6f2f2;
+}
+
+.c-header__list {
+	background-color: #313030;
+
+	ul {
+		list-style-type: none;
+		margin-bottom: 0;
+		padding-left: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		li {
+			&.active {
+				a {
+					background-color: #ff3f40;
+				}
+			}
+			a {
+				text-transform: uppercase;
+				transition: background-color 0.3s ease;
+				display: inline-block;
+				font-size: 14px;
+				color: #e0e0e0;
+				padding: 39px 24px 31px;
+				margin: 0 6px;
+				&:hover {
+					background-color: #ff3f40;
+				}
+			}
+		}
+	}
+}
+
+.container {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.button-toggle{
+	display: none;
+}
+@media screen and (max-width: 767px) {
+	.c-header__list.minimized{
+		ul{
+			transform: translateX(0);
+		}
+		.button-toggle{
+			&:before{
+				transform: translateY(13px) rotate(225deg);
+				border-top: 3px solid #fff;
+				border-bottom: none;
+				bottom: 77%;
+				top: 16%;
+			}
+			&:after{
+				transform: rotate(315deg);
+				bottom: 42%;
+				top: 47%;
+			}
+		}
+	}
+	.c-header__list ul{
+		transform: translateX(-100vw);
+		transition: transform 0.3s ease;
+		position: absolute;
+		background: #313030;
+		flex-direction: column;
+		left: 0;
+		top: 0;
+		justify-content: flex-start;
+		padding-top: 60px;
+		min-width: 100vw;
+		min-height: 100vh;
+		li a{
+			padding: 20px 30px 20px;
+			margin: 5px 10px;
+		}
+	}
+	.button-toggle{
+		cursor: pointer;
+		display: inline-block;
+		position: relative;
+		width: 40px;
+		height: 40px;
+		margin-left: 20px;
+		z-index: 2;
+		&:before{
+			transition: transform 0.3s ease, border-top 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
+			border-bottom: 3px solid #fff;
+			border-top: 3px solid #fff;
+			position: absolute;
+			margin: auto;
+			content: '';
+			bottom: 20%;
+			top: 20%;
+			right: 0;
+			left: 0;
+		}
+		&:after{
+			transition: transform 0.3s ease, border-top 0.3s ease, -webkit-transform 0.3s ease, -moz-transform 0.3s ease, -o-transform 0.3s ease;
+			border-top: 3px solid #fff;
+			position: absolute;
+			margin: auto;
+			content: '';
+			bottom: 0;
+			right: 0;
+			left: 0;
+			top: 47%;
+		}
+	}
+	.c-header__list {
+		background-color: #313030;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		z-index: 9999;
+	}
+}

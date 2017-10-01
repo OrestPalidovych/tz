@@ -1,0 +1,11 @@
+.h-fx{
+    &_justify{
+        display: flex;
+        justify-content: space-between;
+    }
+    &_center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

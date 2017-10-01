@@ -1,0 +1,48 @@
+.c-subscribe {
+	padding-top: 128px;
+	padding-bottom: 28px;
+	text-align: center;
+	background-color: #f5f0dd; 
+	color: #fff;
+	min-height: 400px;
+	background: transparent;
+	text-shadow: 1px 0 1px #000;
+}
+
+.c-subscribe__header {
+	h3 {
+		font-size: 42px;
+		font-weight: 700;
+		margin-bottom: 22px;
+	}
+}
+
+.c-subscribe__mail {
+	max-width: 756px;
+	margin: 58px auto 20px;
+	form {
+		display: flex;
+	}
+	.form-group {
+		flex-grow: 1;
+		margin-right: 20px;
+		input {
+			padding: 31px 32px;
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.c-subscribe {
+		padding-top: 70px;
+		padding-bottom: 20px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.c-subscribe__mail form {
+		flex-direction: column;
+	}
+	.c-subscribe__mail .form-group {
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+}
